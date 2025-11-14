@@ -1,0 +1,15 @@
+{
+    "font awesome 6 brands": {
+        "normal": "font_awesome_6_brands_normal_680623b6fb270051be1f0674e56ab043"
+    },
+    "font awesome 6 free": {
+        "900": "font_awesome_6_free_900_43eb7d8f7af5e04228bbeccd3dfaaecc"
+    },
+    "open sans": {
+        "bold": "open_sans_bold_074d893389082c36506eb383f9ca70e7"
+    },
+    "quicksand": {
+        "normal": "C:\\xampp_ingan\\htdocs\\locketing\\application\\libraries\\dompdf-master\\vendor\\dompdf\\dompdf\/lib\/fonts\/quicksand_normal_cdecf9ad94c57979fa246685c91b4172",
+        "600": "quicksand_600_f377c0853b237a183f16737745de0328"
+    }
+}
