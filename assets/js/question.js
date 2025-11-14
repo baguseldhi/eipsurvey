@@ -1,10 +1,11 @@
 $(document).ready(function(){ 
+let survey_id = new URLSearchParams(window.location.search).get('param');
 let table = $('#t_layanan').DataTable({
     "processing": true,
     "serverSide": true,
     "order": [],
     "ajax": {
-        "url": base+"questions/get_data_question",
+        "url": base+"questions/get_data_question/?param="+survey_id,
         "type": "POST"
     },
     "columnDefs": [{

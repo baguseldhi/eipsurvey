@@ -12,32 +12,34 @@ class Questions_model extends CI_Model
         $this->load->database();
     }
 
-    function get_table_layanan()
+    function get_table_layanan($survey_id)
     {
-        $this->_get_layanan_query();
+        $this->_get_layanan_query($survey_id);
         if ($_POST['length'] != -1)
             $this->db->limit($_POST['length'], $_POST['start']);
         $query = $this->db->get();
         return $query->result();
     }
 
-    public function count_all1()
+    public function count_all1($survey_id)
     {
         $this->db->from('questions');
+        $this->db->where('questions.survey_id', $survey_id);
         return $this->db->count_all_results();
     }
 
-    function count_filtered1()
+    function count_filtered1($survey_id)
     {
-        $this->_get_layanan_query();
+        $this->_get_layanan_query($survey_id);
         $query = $this->db->get();
         return $query->num_rows();
     }
 
-    private function _get_layanan_query()
+    private function _get_layanan_query($survey_id)
     {
         $this->db->select('*');
         $this->db->from('questions');
+        $this->db->where('questions.survey_id', $survey_id);
         $i = 0;
 
         foreach ($this->column_search1 as $item) // looping awal

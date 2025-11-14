@@ -31,7 +31,8 @@ class Questions extends CI_Controller
 
     function get_data_question()
     {
-        $list = $this->Questions_model->get_table_layanan();
+        $survey_id = $this->input->get('param');
+        $list = $this->Questions_model->get_table_layanan($survey_id);
         $data = array();
         $no = $_POST['start'];
         foreach ($list as $field) {
@@ -47,8 +48,8 @@ class Questions extends CI_Controller
 
         $output = array(
             "draw" => $_POST['draw'],
-            "recordsTotal" => $this->Questions_model->count_all1(),
-            "recordsFiltered" => $this->Questions_model->count_filtered1(),
+            "recordsTotal" => $this->Questions_model->count_all1($survey_id),
+            "recordsFiltered" => $this->Questions_model->count_filtered1($survey_id),
             "data" => $data,
         );
         //output dalam format JSON
