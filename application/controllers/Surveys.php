@@ -203,15 +203,18 @@ class Surveys extends CI_Controller
         // Set judul file excel
         $filename = "laporan_" . $survey->title . '_' . date('dmY_His') . ".xlsx";
 
-        // Bersihkan output buffer (penting!)
-        ob_clean();
+        // Hapus semua output buffer yang aktif sebelumnya
+        while (ob_get_level()) {
+            ob_end_clean();
+        }
+
+        // Aktifkan buffer baru
         ob_start();
 
-        // Header download yang benar & tidak dobel
+        // Header download XLSX
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         header('Content-Disposition: attachment; filename="' . $filename . '"');
         header('Cache-Control: max-age=0');
-        header('Cache-Control: max-age=1');
         header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
         header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
         header('Cache-Control: cache, must-revalidate');
@@ -219,6 +222,9 @@ class Surveys extends CI_Controller
 
         $writer = new Xlsx($spreadsheet);
         $writer->save('php://output');
+
+        // tutup buffer & kirim output
+        ob_end_flush();
         exit;
     }
 }
