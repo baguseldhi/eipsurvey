@@ -33,36 +33,32 @@
     <div class="container">
         <div class="row">
             <div class="4u">
-                <h2>Kalundborg Industrial Symbiosis, Denmark</h2>
-                <a href="#" class="image full"><img src="<?= base_url('assets/landing/'); ?>images/denmark.jpg" alt=""
+                <h2>Kawasan Industri Jababeka</h2>
+                <a href="#" class="image full"><img src="<?= base_url('assets/landing/'); ?>images/jababeka.jpeg" alt=""
                         width="314" height="144"></a>
-                <p>Kalundborg telah menjadi contoh klasik EIP sejak 1960-an. Berbagai perusahaan, termasuk kilang
-                    minyak, pembangkit listrik, dan produsen gipsum, saling memanfaatkan limbah satu sama lain sebagai
-                    bahan baku. Misalnya, uap panas dari pembangkit listrik dimanfaatkan untuk memanaskan gedung, dan
-                    limbah dari kilang minyak diubah menjadi gipsum untuk pembuatan papan gipsum.</p>
+                <p>Kawasan Industri Jababeka merupakan kawasan eko-industri modern pertama di Indonesia yang
+                    dikembangkan bersama-sama dengan ProLH GTZ di bawah program kerjasama teknis yang dibentuk
+                    Kementerian Lingkungan Hidup Indonesia dan Republik Jerman. Sejak pendiriannya pada tahun 1989,
+                    Kawasan Industri Jababeka telah diakui sebagai kawasan industri yang paling sukses di Indonesia.</p>
             </div>
             <div class="4u">
-                <h2>Kwinana Industrial Area, Australia</h2>
-                <a href="#" class="image full"><img src="<?= base_url('assets/landing/'); ?>images/australia.jpg" alt=""
-                        width="314" height="144"></a>
-                <p>Kwinana Industrial Area adalah kompleks industri utama di Australia Barat, terletak sekitar 30
-                    kilometer di sebelah selatan Perth. Wilayah ini merupakan pusat industri penting yang menghasilkan
-                    berbagai produk kimia, minyak, gas, dan produk manufaktur lainnya. Terdapat beragam perusahaan besar
-                    di sini, termasuk kilang minyak, pabrik-pabrik pengolahan, dan fasilitas industri lainnya. Kawasan
-                    ini juga memainkan peran penting dalam ekonomi Australia Barat dengan menyediakan lapangan kerja dan
-                    berkontribusi pada produksi industri negara.</p>
+                <h2 style="margin-bottom: 20px;">Karawang International Industrial City (KIIC)</h2>
+                <a href="#" class="image full"><img src="<?= base_url('assets/landing/'); ?>images/kiic_industrial.jpg"
+                        alt="" width="314" height="144"></a>
+                <p>KIIC adalah kawasan industri terpadu yang terletak di Karawang, Jawa Barat, merupakan hasil kerja
+                    sama antara Sinar Mas Land dan ITOCHU Corporation Jepang. Kawasan Industri ini memiliki luas +/-
+                    1.500 ha yang beroperasi sejak 1993. Misi kami adalah menyediakan lingkungan kerja yang nyaman bagi
+                    para penyewa (tenant) agar dapat fokus pada aktivitas
+                    mereka.</p>
             </div>
             <div class="4u">
-                <h2 style="margin-bottom: 20px;">Tianjin Economic-Technological Development Area (TEDA), China</h2>
-                <a href="#" class="image full"><img src="<?= base_url('assets/landing/'); ?>images/china.jpg" alt=""
+                <h2>Kawasan Industri MM2100</h2>
+                <a href="#" class="image full"><img src="<?= base_url('assets/landing/'); ?>images/mm2100.jpg" alt=""
                         width="314" height="144"></a>
-                <p>Tianjin Economic-Technological Development Area (TEDA), yang terletak di
-                    Tiongkok merupakan salah
-                    satu zona pengembangan ekonomi dan teknologi terkemuka di negara tersebut. TEDA telah menunjukkan
-                    pencapaian yang signifikan dalam transformasi menjadi Eco-Industrial Park dengan mengintegrasikan
-                    prinsip-prinsip keberlanjutan dalam operasi industri. TEDA telah berhasil mengurangi emisi dan
-                    limbah industri sambil meningkatkan efisiensi produksi secara keseluruhan.</p>
-
+                <p>MM2100 Industrial Town adalah Kawasan Industri terpadu yang pertama kali dikembangkan oleh PT.
+                    Megalopolis Manunggal Industrial Development (PT. MMID), didirikan pada tahun 1990 oleh Marubeni
+                    Corporation dari Jepang dan Bekasi Fajar Industrial Estate (saat ini Argo Manunggal Group of
+                    Indonesia).</p>
             </div>
         </div>
     </div>
