@@ -52,7 +52,8 @@
                     <small class="byline">Data ini dikumpulkan untuk kebutuhan pengembangan Eco-Industrial Park,<br>
                         diharapkan hasil dari data ini dapat dimanfaatkan untuk pengembangan ekosistem
                         kawasan</small><br><br>
-                    <small style="color: red;font-weight: bold">Data Pribadi akan dilingdungi dan tidak akan disebarkan
+                    <small style="color: black;font-weight: bold">Data Pribadi akan dilindungi dan tidak akan
+                        disebarkan
                         kepada
                         pihak lain.</small>
                 </td>
