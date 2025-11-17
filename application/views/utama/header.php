@@ -29,7 +29,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
 
-
 </head>
 
 <body style="font-family: 'Quicksand', sans-serif;">
@@ -39,15 +38,23 @@
         <table>
             <tr>
                 <td> <img src="<?= base_url(); ?>assets/img/kemenperin.png" class="img-fluid" alt="Logo bpn"
-                        width="140px">
+                        width="200px">
                 </td>
                 <td align="center">
-                    <h2>Eco Industrial Park</h2>
+                    <h2>Eco-Industrial Park</h2>
+                    <p>Survey ini bertujuan untuk memetakan proses dan metode <br>
+                        pengumpulan
+                        data terkait
+                        Eco-Industrial
+                        Park yang dilakukan oleh tenant <br> di kawasan industri serta pemanfaatan data yang telah di
+                        peroleh.</p>
                     <h5>Form Survey</h5>
-                    <p>Partisipasi Anda sangat berharga untuk memberikan data akurat mengenai <br /> praktik
-                        lingkungan,ekonomi, dan sosial yang telah/sedang diterapkan di lokasi Anda.<br /> Mohon luangkan
-                        waktu
-                        Anda untuk mengisi kuesioner ini.</p>
+                    <small class="byline">Data ini dikumpulkan untuk kebutuhan pengembangan Eco-Industrial Park,<br>
+                        diharapkan hasil dari data ini dapat dimanfaatkan untuk pengembangan ekosistem
+                        kawasan</small><br><br>
+                    <small style="color: red;font-weight: bold">Data Pribadi akan dilingdungi dan tidak akan disebarkan
+                        kepada
+                        pihak lain.</small>
                 </td>
             </tr>
         </table>
