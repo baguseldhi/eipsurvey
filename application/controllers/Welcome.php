@@ -65,10 +65,8 @@ class Welcome extends CI_Controller
 		$survey = $this->Survey_model->get_by_slug($slug);
 		if (!$survey) show_404();
 
-		$token = $this->get_token();
-
 		$questions  = $this->Questions_model->get_by_survey($survey->id);
-		$response_id = $this->Survey_model->get_or_create_response($survey->id, $token);
+		// $response_id = $this->Survey_model->get_or_create_response($survey->id, $token);
 		// $progress   = $this->Survey_model->get_progress($response_id);
 		// $prev_survey = $this->Survey_model->get_prev_survey($survey->id);
 		// $prev_slug = $prev_survey ? $prev_survey->slug : null;
@@ -76,7 +74,6 @@ class Welcome extends CI_Controller
 		$data = [
 			'title'     => $survey->title,
 			'survey'    => $survey,
-			'response_id'  => $response_id,
 			'surveys'   => $this->Survey_model->get_all(),
 			'questions' => $questions
 		];
@@ -89,10 +86,9 @@ class Welcome extends CI_Controller
 	public function save_step()
 	{
 		$survey_id = $this->input->post('survey_id');
-		$response_id = $this->input->post('response_id');
 		$post = $this->input->post();
-
-
+		$token = $this->get_token();
+		$response_id = $this->Survey_model->get_or_create_response($survey_id, $token);
 		foreach ($post as $key => $val) {
 			if (strpos($key, 'q_') === 0) {
 				$qid = str_replace('q_', '', $key);
@@ -103,26 +99,26 @@ class Welcome extends CI_Controller
 				}
 
 				// CEK apakah jawaban sudah ada untuk response_id + question_id
-				$exists = $this->db->where('response_id', $response_id)
-					->where('question_id', $qid)
-					->get('answers')
-					->row();
+				// $exists = $this->db->where('response_id', $response_id)
+				// 	->where('question_id', $qid)
+				// 	->get('answers')
+				// 	->row();
 
-				if ($exists) {
-					// UPDATE data lama
-					$this->db->where('response_id', $response_id)
-						->where('question_id', $qid)
-						->update('answers', [
-							'value' => $val
-						]);
-				} else {
-					// INSERT data baru
-					$this->db->insert('answers', [
-						'response_id' => $response_id,
-						'question_id' => $qid,
-						'value'       => $val
-					]);
-				}
+				// if ($exists) {
+				// 	// UPDATE data lama
+				// 	$this->db->where('response_id', $response_id)
+				// 		->where('question_id', $qid)
+				// 		->update('answers', [
+				// 			'value' => $val
+				// 		]);
+				// } else {
+				// 	// INSERT data baru
+				// }
+				$this->db->insert('answers', [
+					'response_id' => $response_id,
+					'question_id' => $qid,
+					'value'       => $val
+				]);
 			}
 		}
 

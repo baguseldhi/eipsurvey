@@ -19,6 +19,9 @@ $(document).ready(function(){
                     data: 'slug'
                 },
                 {
+                    data: 'response_count'
+                },
+                {
                     data: null,
                     render: row => `
                     <button class="btn btn-sm btn-warning btnEditSurvey" data-id="${row.id}">Edit</button>

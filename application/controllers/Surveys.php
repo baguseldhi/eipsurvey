@@ -15,6 +15,7 @@ class Surveys extends CI_Controller
         $this->load->model(['Survey_model', 'M_user']);
         $this->load->library('session');
         $this->load->helper(['url', 'form']);
+        $this->load->database();
         if ($this->session->userdata('status') != "login") {
             redirect(base_url("welcome"));
         }
@@ -32,7 +33,14 @@ class Surveys extends CI_Controller
 
     public function list()
     {
-        echo json_encode($this->Survey_model->get_all());
+        $surveys = $this->Survey_model->get_all();
+        foreach ($surveys as $survey) {
+            $survey->response_count = $this->db
+                ->where('survey_id', $survey->id)
+                ->where('status', 'completed')
+                ->count_all_results('responses');
+        }
+        echo json_encode($surveys);
     }
 
     public function get($id)

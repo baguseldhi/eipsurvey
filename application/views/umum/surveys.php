@@ -20,7 +20,8 @@
                                 <th scope="col" style="width: 10px;">urutan</th>
                                 <th scope="col" width="15%">Menu</th>
                                 <th scope="col" width="35%">Judul</th>
-                                <th scope="col" width="25%">Slug</th>
+                                <th scope="col" width="20%">Slug</th>
+                                <th scope="col" width="5%">jml resp</th>
                                 <th scope="col" width="25%">Aksi</th>
                             </tr>
                         </thead>

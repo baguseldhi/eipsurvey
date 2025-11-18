@@ -30,11 +30,11 @@ class Survey_model extends CI_Model
     public function get_or_create_response($survey_id, $token)
     {
         // cek existing response
-        $this->db->where('survey_id', $survey_id);
-        $this->db->where('token', $token);
-        $res = $this->db->get('responses')->row();
+        // $this->db->where('survey_id', $survey_id);
+        // $this->db->where('token', $token);
+        // $res = $this->db->get('responses')->row();
 
-        if ($res) return $res->id;
+        // if ($res) return $res->id;
 
         // insert baru
         $this->db->insert('responses', [
