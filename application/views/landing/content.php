@@ -63,5 +63,37 @@
                     Indonesia).</p>
             </div>
         </div>
+        <div class="row">
+            <div class="4u">
+                <h2>Kawasan Industri Medan</h2>
+                <a href="https://kim.co.id/" class="image full" target="_blank"><img
+                        src="<?= base_url('assets/landing/'); ?>images/kawaasanmedan.jpg" alt="" width="314"
+                        height="144"></a>
+                <p>PT Kawasan Industri Medan merupakan anak usaha PT Danareksa (Persero) di bidang jasa usaha jasa
+                    pengelolaan kawasan industri yang didirikan pada tanggal 7 Oktober 1988 dengan komposisi saham yang
+                    terdiri dari 1 lembar Saham Seri A (Dwiwarna) milik Pemerintah RI, PT Danareksa (Persero) 59,99%,
+                    Pemerintah Provinsi Sumatera Utara 30%, dan Pemerintah Kota Medan 10%.</p>
+            </div>
+            <div class="4u">
+                <h2 style="margin-bottom: 20px;">Greenland International Industrial Center (GIIC)</h2>
+                <a href="https://www.sinarmasland.com/news/giic-kawasan-industri-terbesar-indonesia-berlokasi-di-kota-delta-mas"
+                    class="image full" target="_blank"><img
+                        src="<?= base_url('assets/landing/'); ?>images/deltamas.jpeg" alt="" width="314"
+                        height="144"></a>
+                <p>Kawasan industri menjadi salah satu kebutuhan akan berbagai bentuk bisnis di Indonesia. Tujuan dari
+                    pembangunannya, yakni pengembangan industri yang berkelanjutan secara lingkungan, meningkatkan daya
+                    saing investasi, serta memberikan kepastian lokasi sesuai dengan tata ruang yang ada.</p>
+            </div>
+            <div class="4u">
+                <h2>Kawasan Batamindo</h2>
+                <a href="https://batamindoindustrial.com/" class="image full" target="_blank"><img
+                        src="<?= base_url('assets/landing/'); ?>images/batamindo.jpg" alt="" width="314"
+                        height="144"></a>
+                <p>PT Batamindo Investment Cakrawala mengelola Kawasan Industri Batamindo, termasuk infrastruktur
+                    seperti pembangkit listrik, instalasi pengolahan air dan air limbah, serta fasilitas telekomunikasi
+                    yang terletak di dalam kawasan. Perusahaan ini berkantor pusat di Pulau Batam, Indonesia, dan
+                    merupakan anak perusahaan Gallant Venture Ltd.</p>
+            </div>
+        </div>
     </div>
 </div>
