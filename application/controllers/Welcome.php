@@ -27,8 +27,8 @@ class Welcome extends CI_Controller
 	public function index()
 	{
 		$data['title'] = "EIP Survey | selamat datang.";
-		$surveys = $this->Survey_model->get_by_posisi();
-		$data['slug'] = $surveys->slug;
+		// $surveys = $this->Survey_model->get_by_posisi();
+		// $data['slug'] = $surveys->slug;
 		$this->load->view('landing/header', $data);
 		$this->load->view('landing/content', $data);
 		$this->load->view('landing/footer');
