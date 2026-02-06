@@ -19,66 +19,66 @@
     <link rel="stylesheet" href="<?= base_url('assets/landing/'); ?>css/style-desktop.css">
 
     <style>
-    /* --- General ---------------------------------------------------- */
-    body {
-        overflow-x: hidden;
-    }
-
-    p {
-        text-align: justify;
-    }
-
-    /* --- RESPONSIVE FIX FOR MOBILE ---------------------------------- */
-    @media (max-width: 768px) {
-
-        /* Perkecil judul agar tidak pecah */
-        #logo h1 a {
-            font-size: 2rem;
-            text-align: center;
-            display: block;
+        /* --- General ---------------------------------------------------- */
+        body {
+            overflow-x: hidden;
         }
 
-        #logo span {
-            text-align: center;
-            font-size: 0.9rem;
+        p {
+            text-align: justify;
         }
 
-        /* Nav jadi center dan tidak mepet */
-        #nav ul {
-            flex-direction: column;
-            align-items: center;
-            margin-top: 10px;
+        /* --- RESPONSIVE FIX FOR MOBILE ---------------------------------- */
+        @media (max-width: 768px) {
+
+            /* Perkecil judul agar tidak pecah */
+            #logo h1 a {
+                font-size: 2rem;
+                text-align: center;
+                display: block;
+            }
+
+            #logo span {
+                text-align: center;
+                font-size: 0.9rem;
+            }
+
+            /* Nav jadi center dan tidak mepet */
+            #nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            #nav ul li a {
+                padding: 8px 16px;
+                font-size: 1rem;
+            }
+
+            /* Atur container agar tidak melebar */
+            #header .container {
+                width: 90%;
+                margin: auto;
+            }
         }
 
-        #nav ul li a {
-            padding: 8px 16px;
-            font-size: 1rem;
-        }
+        /* --- SCREEN EXTRA SMALL (hp 320-480px) --------------------------- */
+        @media (max-width: 480px) {
 
-        /* Atur container agar tidak melebar */
-        #header .container {
-            width: 90%;
-            margin: auto;
-        }
-    }
+            #logo h1 a {
+                font-size: 1.6rem;
+            }
 
-    /* --- SCREEN EXTRA SMALL (hp 320-480px) --------------------------- */
-    @media (max-width: 480px) {
+            #logo span {
+                font-size: 0.8rem;
+            }
 
-        #logo h1 a {
-            font-size: 1.6rem;
+            /* Tombol survey */
+            #nav ul li a {
+                font-size: 0.9rem;
+                padding: 10px 18px;
+            }
         }
-
-        #logo span {
-            font-size: 0.8rem;
-        }
-
-        /* Tombol survey */
-        #nav ul li a {
-            font-size: 0.9rem;
-            padding: 10px 18px;
-        }
-    }
     </style>
 
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
@@ -106,7 +106,7 @@
             <!-- Nav -->
             <nav id="nav">
                 <ul>
-                    <li class="active"><a href="<?= base_url('welcome/form/' . $slug); ?>">Mulai Survey</a>
+                    <li class="active"><a id="btnsurvey">Mulai Survey</a>
                     </li>
                 </ul>
             </nav>
